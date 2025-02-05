@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,24 +10,64 @@
       type="text/css"
     />
     <!-- tailwind css cdn -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!-- css style -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font sora-->
     <style>
-
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+      .font-sora {
+        font-family: "Sora", serif;
+      }
     </style>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="c2-assets/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="c2-assets/faavicon.png"
+      type="image/x-icon"
+    />
     <title>Nature's Platter</title>
   </head>
-  <body>
-    <header>
-<h2>hello there</h2>
+  <body class="font-sora">
+    <header class="max-w-[100%] ">
+     <nav class="flex justify-between items-center pb-5 lg:pt-6 p-4 lg:px-40">
+      <!-- mobile nav logo -->
+      <div class="lg:hidden w-14">
+        <a href="#"><img src="c2-assets/mobile-nav-logo.png" alt="nav logo for mobile responsive"></a>
+      </div>
+      <!-- nav logo -->
+      <div class="max-sm:hidden">
+        <a href="#"><img class="w-44" src="c2-assets/logo-header.png" alt="header logo of the page"></a>
+      </div>
+      <!-- nav middle button -->
+      <ul class="menu menu-horizontal px-2 space-x-4 text-2xl max-sm:hidden">
+        <li><a>Product</a></li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li><a>Contact Us</a></li>
+      </ul>
+      <!-- icon login register -->
+      <div class="list-none lg:flex lg:gap-4 lg:items-center max-sm:hidden">
+        <li><a href="#"><img class="w-7 hover:w-8 transition-all duration-150" src="c2-assets/search-icon.png" alt="search icon on the navbar"></a></li>
+        <li><a href="#"><img class="w-7" src="c2-assets/shopping-cart.png" alt="search icon on the navbar"></a></li>
+        <li><button class="btn btn-outline btn-success text-2xl  font-normal hover:drop-shadow-md  ">Login</button></li>
+        <li><button class="btn btn-success text-2xl text-white font-normal hover:drop-shadow-md ">Register</button></li>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="lg:hidden ">
+        <i class="fa-duotone fa-solid fa-bars text-3xl text-[#179800]"></i>
+      </div>
+     </nav>
+     <hr class="border-[#179800] lg:hidden">
+
+     <!-- banner section -->
+
     </header>
     <main>
-
+      
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
