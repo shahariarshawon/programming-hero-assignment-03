@@ -49,7 +49,7 @@
     <title>Nature's Platter</title>
   </head>
   <body class="font-sora">
-    <header class="max-w-[100%] bg-gradient-to-r from-[#EFEBE3] to-white">
+    <header cl    ass="max-w-[100%] bg-gradient-to-r from-[#EFEBE3] to-white">
       <nav class="flex justify-between items-center pb-5 lg:pt-6 p-4 lg:px-40">
         <!-- mobile nav logo -->
         <div class="lg:hidden w-14">
@@ -69,7 +69,7 @@
           /></a>
         </div>
         <!-- nav middle button -->
-        <ul class="menu menu-horizontal px-2 space-x-4 text-2xl max-sm:hidden">
+        <ul class="menu menu-horizontal ml-[150px] px-2 space-x-4 text-2xl max-sm:hidden">
           <li><a>Product</a></li>
           <li>
             <a href="#">Services</a>
@@ -120,10 +120,10 @@
       <!-- banner section -->
       <section class="lg:pt-6 px-4 lg:px-40">
         <div class="text-center">
-          <h2 class="text-[35px] lg:text-6xl pb-5 lg:pb-9 pt-5 lg:pt-16">
+          <h2 class="text-[35px] font-semibold lg:text-[65px] pb-5 lg:pb-9 pt-5 lg:pt-16  lg:leading-snug">
             Freshness
-            <span class="text-[#179800]"
-              >You Can <br />
+            <span class="text-[#179800] animate-pulse"
+              >You Can <br /> 
               Count</span
             >
             On, Prices You'll Love!
@@ -134,13 +134,38 @@
             staples,we've got you covered every day!
           </p>
         </div>
-        <div class="flex justify-center animate-rise">
-          <img src="c2-assets/hero-vegetables.png" alt="banner image" />
+        <div class="flex justify-center overflow-hidden">
+          <img class="animate-rise " src="c2-assets/hero-vegetables.png" alt="banner image" />
         </div>
       </section>
     </header>
     <main>
+      <!-- sevices section -->
+      <section class="lg:pt-6 px-4 lg:px-40">
+        <h2 class="text-2xl lg:text-[35px] text-[#179800] lg:pt-[120px] lg:pb-10 lg:pl-[70px] font-semibold pt-12 pb-5">Services</h2>
+        <div class="flex flex-col lg:flex-row gap-5 lg:justify-evenly text-center">
+          <!-- 24/7 services -->
+          <div class=" bg-[#EFEBE3] rounded-xl lg:w-[420px] lg:p-10 pt-6 shadow-xl">
+            <img class="mx-auto bg-white rounded-full p-4" src="c2-assets/service.png" alt="24/7 service card logo">
+            <h3 class="text-[24px] pt-6 pb-3 font-semibold" >24/7 Services</h3>
+            <p class="max-sm:pb-9 px-7">We are always here for you, day and night, providing seamless support and assistance</p>
+          </div>
+          <!-- fast delivery -->
+          <div class=" bg-[#EFEBE3] rounded-xl lg:w-[420px] pt-6 lg:p-10 shadow-xl">
+            <img class="mx-auto bg-white rounded-full p-4" src="c2-assets/delivery.png" alt="fast delivery service card logo">
+            <h3 class="text-[24px] pt-6 pb-3 font-semibold" >Fast Delivery</h3>
+            <p  class="max-sm:pb-9 px-7">Get your orders delivered to your doorstep quickly and efficiently, every time</p>
+          </div>
+          <!-- healthy products -->
+          <div class=" bg-[#EFEBE3] rounded-xl lg:w-[420px] pt-6 lg:p-10 shadow-xl">
+            <img class="mx-auto bg-white rounded-full p-4" src="c2-assets/healthy.png" alt="healthy products card logo">
+            <h3 class="text-[24px] pt-6 pb-3 font-semibold">Healthy Products</h3>
+            <p  class="max-sm:pb-9 px-7">We offer fresh, organic, and nutritious products to keep you and your family healthy</p>
+          </div>
+        </div>
 
+        
+      </section>
     </main>
     <footer></footer>
   </body>
