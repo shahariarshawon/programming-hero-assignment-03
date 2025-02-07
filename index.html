@@ -225,9 +225,9 @@
           </div>
         </div>
       </section>
-      <!-- sticky section -->
+      <!-- fixed section -->
       <section>
-        <div class="bg-green-500 w-[60px] lg:w-[80px] drop-shadow-2xl rounded-tl-xl rounded-bl-xl fixed top-1/2 right-0 ">
+        <div class="bg-green-500 w-[60px] lg:w-[120px] border border-gray-200 rounded-tl-xl rounded-bl-xl fixed top-1/2 right-0 z-50">
          <div class="bg-white px-4 py-3 rounded-tl-xl">
           <img class="w-20 " src="c2-assets/stikcy-cart.png" alt="sticky section cart image">
          </div>
@@ -238,7 +238,7 @@
       </section>
       <!-- popular products section -->
       <section class="bg-[#EFEBE3] lg:pt-6 px-4 lg:px-40">
-        <h2 class="text-3xl lg:text-[36px] text-[#179800] pt-[55px] lg:pt-[100px] pb-10">
+        <h2 class="lg:text-4xl text-2xl text-[#179800] pt-[45px] lg:pt-[100px] pb-8">
           Popular Products
         </h2>
 
@@ -282,7 +282,7 @@
                   <input
                     type="radio"
                     name="rating-1"
-                    class="mask mask-star-2 lg:w-[21px] bg-orange-400 w-[18px]"
+                    class="mask mask-star-2 lg:w-[21px] bg-orange-300 w-[18px]"
                   />
                   <p class="text-xs lg:text-sm">4.1</p>
                 </div>
@@ -661,7 +661,7 @@
 
         <!-- Arrival and Offers -->
         <section class="px-4 lg:px-40 pb-[80px] lg:pb-[120px]">
-          <h2 class="text-4xl font-semibold text-[#179800] pt-[80px] lg:pt-[120px] pb-[40px]">Arrival & Offers</h2>
+          <h2 class="text-2xl lg:text-4xl font-semibold text-[#179800] pt-[80px] lg:pt-[120px] pb-[40px]">Arrival & Offers</h2>
           <div class="flex lg:flex-row flex-col  gap-10">
             <!-- 1st image -->
           <div class="bg-[#115414] lg:flex-[2] py-5 flex items-center justify-between px-5  lg:px-10 rounded-xl pr-0 lg:rounded-3xl">
@@ -687,7 +687,7 @@
               <p class="text-white lg:text-[40px]">UP to <span class="font-bold">40% OFF</span></p>
             </div>
             <div>
-              <img class="max-sm:h-[150px] "  src="c2-assets/india-gate-mock-up.png" alt="india gate rice image">
+              <img class="max-sm:h-[180px] lg:w-[180px] lg:h-[360px] "  src="c2-assets/india-gate-mock-up.png" alt="india gate rice image">
             </div>
           </div>
           </div>
@@ -695,29 +695,56 @@
       
 
         <!-- FAQ section -->
-        <!-- <section>
-          <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <section class="px-4 lg:px-40 pb-[80px] lg:pb-[120px]">
+          <h2 class="text-2xl lg:text-4xl font-semibold text-[#179800]  pb-[40px]">Frequently Asked Questions (FAQ)</h2>
+          <div class="space-y-2">
+            <!-- 1st qstn -->
+            <div class="collapse collapse-plus border border-gray-300 hover:border-blue-300 hover:bg-gray-100  bg-white">
+              <input type="checkbox" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">How do I place an order?</div>
+              <div class="collapse-content">
+                <p>Simply browse our products, add items to your cart, and proceed to checkout.</p>
+              </div>
+            </div>
+          <!-- 2nd qstn -->
+          <div class="collapse collapse-plus border border-gray-300 hover:border-blue-300 hover:bg-gray-100  bg-white">
+            <input type="checkbox" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Do you offer same-day delivery?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>Yes! We offer same-day delivery for orders placed before 12 PM. Delivery times may vary depending on your location.</p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <!-- 3rd qstn -->
+          <div class="collapse collapse-plus border hover:border-blue-300 hover:bg-gray-100  border-gray-300 bg-white">
+            <input type="checkbox" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">What payment methods do you accept?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>We accept credit/debit cards, mobile banking (Bkash, Nagad, Rocket), and cash on delivery (COD).</p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <!-- 4th qstn -->
+          <div class="collapse collapse-plus border hover:border-blue-300 hover:bg-gray-100  border-gray-300 bg-white">
+            <input type="checkbox" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium"> What if I receive a damaged product?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>If you receive a damaged or wrong item, please contact our support team within 24 hours for a free replacement or refund.</p>
             </div>
           </div>
-        </section> -->
+          <!-- 5th question -->
+          <div class="collapse collapse-plus border hover:border-blue-300 hover:bg-gray-100  border-gray-300 bg-white">
+            <input type="checkbox" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Are your fruits and vegetables fresh?</div>
+            <div class="collapse-content">
+              <p>Yes! We source our products daily from local farms and ensure they are fresh before delivery.</p>
+            </div>
+          </div>
+         
+          </div>
+        </section>
+
+       
+       
+        
     </main>
     <footer>
 
